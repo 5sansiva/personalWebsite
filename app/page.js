@@ -94,6 +94,14 @@ const Home = () => {
           <button type="submit" className="bg-blue-500 p-2 rounded text-white">Send Message</button>
         </form>
       </section>
+
+       {/* Journey Section */}
+       <section id="journey" className="py-20 px-4 text-center">
+        <h3 className="text-3xl font-bold">My Journey</h3>
+        <p className="mt-4 max-w-xl mx-auto">
+          In my recent project, I utilized <strong>Next.js</strong> and <strong>Tailwind CSS</strong> to create a responsive and visually appealing web application. Next.js provided a robust framework for server-side rendering and static site generation, enabling me to optimize performance and improve SEO. Tailwind CSS complemented this by offering a utility-first approach to styling, allowing for rapid design iteration without leaving the HTML. However, I encountered several challenges when deploying the Next.js application to GitHub Pages. One significant issue was that GitHub Pages primarily serves static files, while Next.js applications typically require a Node.js server to handle dynamic routing and API requests. This discrepancy necessitated the use of a custom build process to export the application as static files. Additionally, I faced difficulties with configuring the paths correctly in the `next.config.js` file, as the default routing expected a different structure than what GitHub Pages supports. Despite these hurdles, the experience enhanced my understanding of deployment processes and the intricacies of working with modern web frameworks, ultimately leading to a successful deployment of the application.
+        </p>
+      </section>
     </main>
   );
 };
